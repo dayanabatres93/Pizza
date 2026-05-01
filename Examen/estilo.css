@@ -1,0 +1,181 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #fdfaf6; /* Un color crema muy suave */
+    color: #333;
+}
+
+/* Encabezado y Navegación*/
+header {
+    background-color: #d32f2f; /* La barra roja */
+    color: white; /*El titulo "El Buen Horno" en blanco */
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky; 
+    top: 0;    
+    z-index: 1000;
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #ffb300; /* Amarillo/Naranja al pasar el mouse */
+}
+
+/* --- Sección Hero (Imagen principal ficticia) --- */
+.hero {
+    background-image: url('Pizza.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    background-color: #ffb300; 
+    padding: 100px 50px;
+    text-align: center;
+    color: #fff;
+    min-height: 80vh;
+}
+
+
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.hero p {
+    font-size: 1.2em; /*descripcion del hero */
+    margin-bottom: 20px;
+}
+
+.btn {
+    background-color: #d32f2f; /* El mismo rojo del header para el botón 'ver menu' */
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: #b71c1c;
+}
+
+/* Sección del Menú */
+.menu-seccion {
+    padding: 100px 50px;
+    text-align: center;
+}
+
+.menu-seccion h2 { 
+    margin-bottom: 30px; /*titulo del menu */
+    color: #d32f2f;
+    font-size: 2.5em;
+}
+
+.contenedor-pizzas {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap; /* Permite que bajen de línea si la pantalla es pequeña */
+}
+
+.tarjeta-pizza {
+    background-color: white;
+    background-size: cover;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    width: 250px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+.tarjeta-pizza img {
+    width: 100%;          
+    height: 180px;        
+    object-fit: cover;    /* Evita que la foto se deforme o estire */
+    border-radius: 8px 8px 0 0; /* Bordes redondeados solo arriba para que combine con la tarjeta pero como es png transparente no se ve*/
+    margin-bottom: 10px;  /* espacio entre la foto y el texto */
+    display: block;       /* Elimina pequeños espacios extra debajo de la imagen */
+}
+
+/*Botón de WhatsApp*/
+
+.btn-whatsapp {
+    display: inline-block; 
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #25d366; 
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.btn-whatsapp:hover {
+    background-color: #128c7e; /* Animacion del WhatsApp (se pone mas oscuro) */
+}
+
+.tarjeta-pizza:hover {
+    transform: translateY(-5px); /* La animacion del mouse */
+}
+
+.tarjeta-pizza h3 {
+    margin-bottom: 10px; /*titulo de la pizza */
+    color: #333;
+}
+
+.tarjeta-pizza p {
+    font-size: 0.9em; /*descripcion de la pizza */
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.precio {
+    display: block;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #d32f2f;
+}
+
+/* --- Pie de Página --- */
+footer {
+    background-color: #222; /* Un fondo oscuro para el pie de página */
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+    margin-top: 20px;
+}
+
+footer h3 {
+    margin-bottom: 10px; /*titulo del pie de pagina */
+    color: #ffb300;
+}
+
+footer p {
+    margin-bottom: 5px; /*informacion de contacto */
+    font-size: 0.9em;
+}

@@ -179,3 +179,59 @@ footer p {
     margin-bottom: 5px; /*informacion de contacto */
     font-size: 0.9em;
 }
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+header {
+    flex-wrap: wrap;
+}
+
+nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.hero {
+    padding: 40px 15px;
+    min-height: auto;
+}
+
+.hero h1 {
+    font-size: clamp(1.5em, 5vw, 3em);
+}
+
+.hero p {
+    font-size: clamp(1em, 3vw, 1.2em);
+}
+
+.menu-seccion {
+    padding: 50px 15px;
+}
+
+.tarjeta-pizza {
+    width: 100%;
+    max-width: 300px;
+}
+
+.btn, .btn-whatsapp {
+    max-width: 100%;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
